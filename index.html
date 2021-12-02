@@ -19,8 +19,8 @@
         height: 97vh;   
     }
     #SP{
-        height: 300px;
-        width: 520px;
+        height: 60vh;
+        width: 50vw;
         border-style: solid;
         border-width: 3pt;
         border-color: black;
@@ -30,28 +30,27 @@
         #SP{
             max-width: 600px;
             max-height: 900px;
-            width:300px;
-            height:550px;
+            
         }
     }
     @media screen and (orientation:landscape) {
         #SP{
             max-width: 1200px;
             max-height: 800px;
-
+           
         }
     }
 
 </style>
 <body>
     <div id = "container">
-        <picture id="SP-RESPONSIVE">
-            <source media="(orientation: landscape) and (min-width: 700px)" srcset="H3-HEIC.heic" type="image/heic">
-            <source media="(orientation: landscape) and (min-width: 700px)" srcset="H3-WEBP.webp" type="image/webp"> 
-            <source media="(orientation: landscape) and (min-width: 700px)" srcset="H3-JPG.jpg" type="image/jpg">
-            <source media="(orientation: landscape) and (min-width: 549px)" srcset="H4-HEIC.heic" type="image/heic">
-            <source media="(orientation: landscape) and (min-width: 549px)" srcset="H4-WEBP.webp" type="image/webp">
-            <source media="(orientation: landscape) and (min-width: 549px)" srcset="H4-JPG.jpg" type="image/jpg">
+        <picture>
+            <source media="(orientation: landscape) and (min-width: 1000px)" srcset="H3-HEIC.heic" type="image/heic">
+            <source media="(orientation: landscape) and (min-width: 1000px)" srcset="H3-WEBP.webp" type="image/webp"> 
+            <source media="(orientation: landscape) and (min-width: 1000px)" srcset="H3-JPG.jpg" type="image/jpg">
+            <source media="(orientation: landscape) and (min-width: 600px)" srcset="H4-HEIC.heic" type="image/heic">
+            <source media="(orientation: landscape) and (min-width: 600px)" srcset="H4-WEBP.webp" type="image/webp">
+            <source media="(orientation: landscape) and (min-width: 600px)" srcset="H4-JPG.jpg" type="image/jpg">
             <source media="(orientation: portrait) and (min-width: 540px)" srcset="V1-HEIC.heic" type="image/heic">
             <source media="(orientation: portrait) and (min-width: 540px)" srcset="V1-WEBP.webp" type="image/webp">
             <source media="(orientation: portrait) and (min-width: 540px)" srcset="V1-JPG.jpg" type="image/jpg">
