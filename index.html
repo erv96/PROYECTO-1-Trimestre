@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto 1º Trimestre</title>
+</head>
+<style>
+
+    body{
+        background-color: darkred;
+    }
+
+    #container{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        height: 97vh;   
+    }
+    #SP{
+        height: 300px;
+        width: 520px;
+        border-style: solid;
+        border-width: 3pt;
+        border-color: black;
+        
+    }
+    @media screen and (orientation:portrait) {
+        #SP{
+            max-width: 600px;
+            max-height: 900px;
+            width:300px;
+            height:550px;
+        }
+    }
+    @media screen and (orientation:landscape) {
+        #SP{
+            max-width: 1200px;
+            max-height: 800px;
+
+        }
+    }
+
+</style>
+<body>
+    <div id = "container">
+        <picture id="SP-RESPONSIVE">
+            <source media="(orientation: landscape) and (min-width: 700px)" srcset="H3-HEIC.heic" type="image/heic">
+            <source media="(orientation: landscape) and (min-width: 700px)" srcset="H3-WEBP.webp" type="image/webp">
+            <source media="(orientation: landscape) and (min-width: 700px)" srcset="H3-JPG.jpg" type="image/jpg">
+            <source media="(orientation: landscape) and (min-width: 549px)" srcset="H4-HEIC.heic" type="image/heic">
+            <source media="(orientation: landscape) and (min-width: 549px)" srcset="H4-WEBP.webp" type="image/webp">
+            <source media="(orientation: landscape) and (min-width: 549px)" srcset="H4-JPG.jpg" type="image/jpg">
+            <source media="(orientation: portrait) and (min-width: 540px)" srcset="V1-HEIC.heic" type="image/heic">
+            <source media="(orientation: portrait) and (min-width: 540px)" srcset="V1-WEBP.webp" type="image/webp">
+            <source media="(orientation: portrait) and (min-width: 540px)" srcset="V1-JPG.jpg" type="image/jpg">
+            <source media="(orientation: portrait) and (min-width: 1px)" srcset="V2-HEIC.heic" type="image/heic">
+            <source media="(orientation: portrait) and (min-width: 1px)" srcset="V2-WEBP.webp" type="image/webp">
+            <source media="(orientation: portrait) and (min-width: 1px)" srcset="V2-JPG.jpg" type="image/jpg">
+
+            <img id="SP" alt ="Una imagen de mi superheroe favorito" title="Un gran poder conlleva una gran responsabilidad" src="H3-JPG.jpg">
+        </picture>
+    </div>
+
+</body>
+</html>
