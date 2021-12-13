@@ -16,24 +16,32 @@
         display:flex;
         justify-content: center;
         align-items: center;
-        height: 97vh;   
+        height: 97vh;  
+        
+        
+        
     }
-    #SP{
-        height: 60vh;
+    #sp{
+        height: 50vh;
         width: 50vw;
         border-style: solid;
         border-width: 3pt;
         border-color: black;
-        
+        object-fit: cover;
+
     }
+
+        
+    
     @media screen and (orientation:portrait) {
-        #SP{
+        #sp{
             max-width: 600px;
             max-height: 900px;
+            
         }
     }
     @media screen and (orientation:landscape) {
-        #SP{
+        #sp{
             max-width: 1200px;
             max-height: 800px;
             
@@ -41,11 +49,11 @@
     }
 </style>
 <body>
-    <div id = "container">
-        <picture>
-            <source media="(orientation: landscape) and (min-width: 1100px)" srcset="H3-HEIC.heic" type="image/heic">
-            <source media="(orientation: landscape) and (min-width: 1100px)" srcset="H3-WEBP.webp" type="image/webp"> 
-            <source media="(orientation: landscape) and (min-width: 1100px)" srcset="H3-JPG.jpg" type="image/jpg">
+    <div id ="container">
+        <picture id ="portaSP">
+            <source media="(orientation: landscape) and (min-width: 1200px)" srcset="H3-HEIC.heic" type="image/heic">
+            <source media="(orientation: landscape) and (min-width: 1200px)" srcset="H3-WEBP.webp" type="image/webp"> 
+            <source media="(orientation: landscape) and (min-width: 1200px)" srcset="H3-JPG.jpg" type="image/jpg">
             <source media="(orientation: landscape) and (min-width: 600px)" srcset="H4-HEIC.heic" type="image/heic">
             <source media="(orientation: landscape) and (min-width: 600px)" srcset="H4-WEBP.webp" type="image/webp">
             <source media="(orientation: landscape) and (min-width: 600px)" srcset="H4-JPG.jpg" type="image/jpg">
@@ -56,7 +64,7 @@
             <source media="(orientation: portrait) and (min-width: 1px)" srcset="V2-WEBP.webp" type="image/webp">
             <source media="(orientation: portrait) and (min-width: 1px)" srcset="V2-JPG.jpg" type="image/jpg">
 
-            <img id="SP" alt ="Una imagen de mi superheroe favorito" title="Un gran poder conlleva una gran responsabilidad" src="H3-JPG.jpg">
+            <img id="sp" alt ="Una imagen de mi superheroe favorito" title="Un gran poder conlleva una gran responsabilidad" src="H3-JPG.jpg">
         </picture>
     </div>
 
